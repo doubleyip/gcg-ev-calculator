@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>GCG Expected Value Calculator</title>
+</head>
+<body>
+    <h1>GCG Expected Value Calculator</h1>
+    <h3>Calculator to help you decide how many copies of certain cards/categories of cards you should play if you want to see X number of them in Y turns. For example, if you want to see 2 2/2 Vanillas by turn 2 going first or 1 3/2 blocker by turn 2 going second.</h3>
+    <form id="turnSelectionRadio">
+        <input type="radio" name="option" value="first" checked>Going First<br>
+        <input type="radio" name="option" value="second">Going Second<br>
+    </form>
+    
+    <form id="expectedCopies">
+        How many copies of the card do you expect to see?
+        <input type="number" name="expectedCopies" min="1" max="50"><br>
+    </form>
+
+    <form id="turnCount">
+        What is the curve? (How many regular resources do you have/What turn is it?)
+        <input type="number" id="turnCount" name="turnCount" min="1" max="10">
+    </form>
+    <p>You should play: <span id="copiesToPlay"></span> copies</p>
+    <script src="script.js"></script>
+</body>
+</html>
