@@ -21,8 +21,19 @@
 
     <form id="turnCount">
         What is the curve? (How many regular resources do you have/What turn is it?)
-        <input type="number" id="turnCount" name="turnCount" min="1" max="10">
+        <input type="number" name="turnCount" min="1" max="10">
     </form>
+
+    <form id="drawOneCount">
+        How many draw 1's do you have in your deck that you will play by this turn? (A Healthy Curiosity, Kindhearted)    
+        <input type="number" name="drawOneCount" min="1" max="50">
+    </form>
+
+    <form id="drawTwoCount">
+        How many draw 2's do you have in your deck that you will play by this turn? (Overflowing Affection, Show of Resolve)    
+        <input type="number" name="drawTwoCount" min="1" max="50">
+    </form>
+
     <p>You should play: <span id="copiesToPlay"></span> copies</p>
     <script src="script.js"></script>
 </body>
